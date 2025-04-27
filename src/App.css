@@ -1,0 +1,16 @@
+#root {
+  margin: 0 auto;
+  width: 1680px;
+  padding: 2rem;
+  text-align: center;
+}
+
+button{
+  width: auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
