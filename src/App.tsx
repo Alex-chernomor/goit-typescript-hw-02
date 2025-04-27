@@ -12,7 +12,7 @@ import toast, {Toaster} from 'react-hot-toast';
 import './App.css';
 import { ImageTS } from './types/types';
 
-// setAppElement('#root'); 
+setAppElement('#root'); 
 
 function App() {
   
