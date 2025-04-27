@@ -1,11 +1,10 @@
 import css from './ImageModal.module.css';
 import React, { FC } from 'react';
 import Modal from 'react-modal';
-import { ImageTS } from '../../types/types';
 
 interface ImageModalProps {
   isOpen: boolean;
-  image: ImageTS | null; 
+  image: string | null; 
   closeModal: () => void;
 }
 
@@ -16,11 +15,9 @@ const ImageModal: FC<ImageModalProps> = ({ isOpen, image, closeModal }) => {
     <Modal
      isOpen={isOpen} 
      onRequestClose={closeModal}
-     className={css.modal}
-     overlayClassName={css.overlay}
      >
       <div>
-        <img src={image.urls.regular} alt="Large view" className={css.modalImage} />
+        <img src={image} alt="Large view" className={css.modalImage} />
         <button onClick={closeModal} className={css.closeBtn}>Close</button>
       </div>
     </Modal>

@@ -12,7 +12,7 @@ import toast, {Toaster} from 'react-hot-toast';
 import './App.css';
 import { ImageTS } from './types/types';
 
-// setAppElement('#root'); 
+setAppElement('#root'); 
 
 function App() {
   
@@ -24,9 +24,9 @@ function App() {
   const [maxPage, setMaxPage] = useState<number>(0);
   const [noImg, setNoImg] = useState<boolean>(false)
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const [modalImage, setModalImage] = useState<null|ImageTS>(null);
+  const [modalImage, setModalImage] = useState<string | null>(null);
   
-  const openModal = (image:ImageTS) => {
+  const openModal = (image:string) => {
     setModalImage(image);
     setIsModalOpen(true);
   };
