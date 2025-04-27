@@ -1,7 +1,7 @@
+import React, { FC } from 'react';
 import ImageCard from "../ImageCard/ImageCard";
 import css from './ImageGalley.module.css';
 import { ImageTS } from "../../types/types"; 
-import React, { FC } from 'react';
 
 interface ImageGalleryProps {
   items: ImageTS[];   
